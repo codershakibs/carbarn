@@ -1,0 +1,299 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Project Name
+ * @author      -
+ * @created_by  - Asraful Hoque
+ * @created_at  -
+ * @modified_by -
+ */
+
+/* fonts import */
+
+
+/* fonts import -END */
+
+/* reset, root */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+// :root {
+//     --blue: #2161e0;
+//     --aliceblue: #e7efff;
+//     --pink: #e93266;
+//     --lavender: #ffedf2;
+//     --dark: #101044;
+//     --eastbay: #54547a;
+//     --stormgrey: #6f6f87;
+//     --manatee: #8d8dae;
+//     --solitude: #e9e9f1;
+//     --lavender2: #f2f2fb;
+//     --lavender3: #f9f9fe;
+//     --skyblue: #219fff;
+//     --aliceblue2: #e9f6ff;
+//     --green: #17bd8d;
+//     --greenlight: #e9fbf6;
+//     --yellow: #ffa114;
+//     --floralwhite: #fff7eb;
+//     --sunsetorange: #ff4e3e;
+//     --rose: #ffedec;
+//     --lavender4: #e1deff;
+//     --columbiablue: #b0ddff;
+//     --rose2: #ffe6e4;
+// }
+
+/* reset, root - END */
+
+// container resize
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1446px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+// container resize - end
+
+/* helper , base classes */
+
+// text-color
+.text-dark-1 {
+    color: #061D33;
+}
+
+.text-dark-2 {
+    color: #0C3A66;
+}
+
+.text-dark-3 {
+    color: #525355;
+}
+
+.text-primary {
+    color: #0473EA;
+}
+
+
+// custom font size
+.fs-12 {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.fs-12-v2 {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.fs-12-v3 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.fs-13 {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.fs-14 {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.fs-14-v2 {
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.fs-16 {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.fs-18 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 800;
+}
+
+.fs-30 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+.fs-24 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 800;
+}
+
+.p-stock {
+    padding: 15px 50px 15px 15px;
+}
+
+.p-course {
+    padding: 15px 5px 17px 5px;
+}
+
+.p-course-2 {
+    padding: 15px 4px 10px 10px;
+}
+
+
+
+// custom button
+.green-yello-btn {
+    padding: 18px 32px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #00FFA2 0%, #FFE664 100%);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #001B44;
+
+}
+
+/* helper , base classes  - END*/
+.carbarn-wrapper {
+    .feature-wrapper {
+        margin-top: 31px;
+
+        .feature {
+            border-radius: 16px;
+            border: 1px solid #E8E8E8;
+            background-color: #FFF;
+
+            &:hover {
+                background: rgba(4, 115, 234, 0.05);
+
+            }
+        }
+
+    }
+
+    .course {
+        margin-top: 30px;
+
+        .checkboxs {
+            border-radius: 16px;
+            background: rgba(4, 115, 234, 0.05);
+        }
+
+        .checkbox-head {
+            max-width: 120px;
+
+        }
+
+        .checkbox-sub {
+            max-width: 120px;
+        }
+
+        .checkbox-wrapper {
+            margin-top: 20px;
+        }
+    }
+
+
+    .form-element {
+        // position: relative;
+        width: 130px;
+        height: 130px;
+        // background: #f2f2f2;
+
+        input {
+            display: none;
+        }
+
+        label {
+            // position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            transition: all 230ms linear;
+        }
+
+    }
+
+    svg * {
+        fill: rgb(241, 0, 0);
+    }
+
+    input:checked+label {
+        border-color: #0473EA;
+        border-radius: 16px;
+    }
+
+
+    input:checked+label {
+        .icon {
+            svg * {
+                fill: rgb(0, 2, 136)
+            }
+        }
+    }
+}
+
+.thumbnails {
+    .thumbnail {
+        img {
+            border-radius: 16px !important;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+.carbarn-details {
+    margin-top: 20px;
+}
+
+.carbarn-btn {
+    padding: 16px 40px;
+    background-color: #0473EA;
+    border-radius: 100px;
+    margin-top: 20px;
+}
