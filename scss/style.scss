@@ -218,6 +218,7 @@ img {
         .checkboxs {
             border-radius: 16px;
             background: rgba(4, 115, 234, 0.05);
+            cursor: pointer;
         }
 
         .checkbox-head {
@@ -266,13 +267,7 @@ img {
     }
 
 
-    input:checked+label {
-        .icon {
-            svg * {
-                fill: rgb(0, 2, 136)
-            }
-        }
-    }
+
 }
 
 .thumbnails {
@@ -296,4 +291,25 @@ img {
     background-color: #0473EA;
     border-radius: 100px;
     margin-top: 20px;
+}
+
+.thumbnail .thumbnail-img-wrap {
+    position: relative;
+}
+
+.thumbnail .thumbnail-img-wrap::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #001b446e;
+    border-radius: 16px;
+    z-index: 99;
+    transition: all 230ms;
+}
+
+.thumbnail.is-active .thumbnail-img-wrap::after {
+    background: transparent;
 }
