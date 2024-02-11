@@ -221,6 +221,10 @@ img {
             cursor: pointer;
         }
 
+        .redbook-unique {
+            padding: 30px 5px 17px 5px;
+        }
+
         .checkbox-head {
             max-width: 120px;
 
@@ -266,50 +270,48 @@ img {
         border-radius: 16px;
     }
 
+    .thumbnails {
+        .thumbnail {
+            img {
+                border-radius: 16px !important;
+            }
+        }
 
-
-}
-
-.thumbnails {
-    .thumbnail {
-        img {
-            border-radius: 16px !important;
+        li {
+            list-style: none;
         }
     }
 
-    li {
-        list-style: none;
+    .carbarn-details {
+        margin-top: 20px;
     }
-}
 
-.carbarn-details {
-    margin-top: 20px;
-}
+    .carbarn-btn {
+        padding: 16px 40px;
+        background-color: #0473EA;
+        border-radius: 100px;
+        margin-top: 20px;
+    }
 
-.carbarn-btn {
-    padding: 16px 40px;
-    background-color: #0473EA;
-    border-radius: 100px;
-    margin-top: 20px;
-}
+    .thumbnail .thumbnail-img-wrap {
+        position: relative;
+    }
 
-.thumbnail .thumbnail-img-wrap {
-    position: relative;
-}
+    .thumbnail .thumbnail-img-wrap::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #001b446e;
+        border-radius: 16px;
+        z-index: 99;
+        transition: all 230ms;
+    }
 
-.thumbnail .thumbnail-img-wrap::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #001b446e;
-    border-radius: 16px;
-    z-index: 99;
-    transition: all 230ms;
-}
+    .thumbnail.is-active .thumbnail-img-wrap::after {
+        background: transparent;
+    }
 
-.thumbnail.is-active .thumbnail-img-wrap::after {
-    background: transparent;
 }

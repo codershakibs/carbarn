@@ -168,6 +168,9 @@ img {
   background: rgba(4, 115, 234, 0.05);
   cursor: pointer;
 }
+.carbarn-wrapper .course .redbook-unique {
+  padding: 30px 5px 17px 5px;
+}
 .carbarn-wrapper .course .checkbox-head {
   max-width: 120px;
 }
@@ -198,30 +201,25 @@ img {
   border-color: #0473EA;
   border-radius: 16px;
 }
-
-.thumbnails .thumbnail img {
+.carbarn-wrapper .thumbnails .thumbnail img {
   border-radius: 16px !important;
 }
-.thumbnails li {
+.carbarn-wrapper .thumbnails li {
   list-style: none;
 }
-
-.carbarn-details {
+.carbarn-wrapper .carbarn-details {
   margin-top: 20px;
 }
-
-.carbarn-btn {
+.carbarn-wrapper .carbarn-btn {
   padding: 16px 40px;
   background-color: #0473EA;
   border-radius: 100px;
   margin-top: 20px;
 }
-
-.thumbnail .thumbnail-img-wrap {
+.carbarn-wrapper .thumbnail .thumbnail-img-wrap {
   position: relative;
 }
-
-.thumbnail .thumbnail-img-wrap::after {
+.carbarn-wrapper .thumbnail .thumbnail-img-wrap::after {
   position: absolute;
   content: "";
   left: 0;
@@ -233,7 +231,6 @@ img {
   z-index: 99;
   transition: all 230ms;
 }
-
-.thumbnail.is-active .thumbnail-img-wrap::after {
+.carbarn-wrapper .thumbnail.is-active .thumbnail-img-wrap::after {
   background: transparent;
 }/*# sourceMappingURL=style.css.map */
