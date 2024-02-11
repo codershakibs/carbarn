@@ -1,0 +1,142 @@
+/* fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
+/* reset, root */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: "Manrope", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1470px;
+  }
+}
+
+/*font size*/
+.fs-12 {
+  font-size: 12px;
+  line-height: normal;
+}
+
+.fs-13 {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.fs-14 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.fs-6 {
+  line-height: normal !important;
+}
+
+.fs-18 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 800;
+}
+
+.fs-4 {
+  line-height: 34px !important;
+  font-weight: 800 !important;
+}
+
+.fs-30 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+/*Text color*/
+.text-clr-primary {
+  color: #0473EA;
+}
+
+.text-clr-dark1 {
+  color: #061D33;
+}
+
+.text-clr-dark2 {
+  color: #0C3A66;
+}
+
+.text-clr-dark3 {
+  color: #525355;
+}
+
+.fw-regular {
+  font-weight: 500;
+}
+
+/*btn*/
+.primary-btn {
+  display: block;
+  background-color: #0473EA;
+  border-radius: 100px;
+}
+
+.car-selection-wrapper nav {
+  --bs-breadcrumb-divider: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.93994 13.28L10.2866 8.9333C10.7999 8.41997 10.7999 7.57997 10.2866 7.06664L5.93994 2.71997" stroke="%23525355" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>') !important;
+  position: center center;
+}
+.car-selection-wrapper nav ol li a {
+  color: #525355;
+}
+.car-selection-wrapper .splide .splide__arrow {
+  margin-top: -370px;
+  max-width: 54px;
+  width: 100%;
+  background: none;
+}
+.car-selection-wrapper .splide .splide__track {
+  margin-top: 20px !important;
+}
+.car-selection-wrapper .splide .splide__track .splide__slide {
+  border: 3px solid transparent !important;
+}
+.car-selection-wrapper .splide .splide__track .splide__slide .is-active {
+  outline: none;
+}
+.car-selection-wrapper .features {
+  gap: 13px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.car-selection-wrapper .features .feature-card {
+  padding: 15px;
+  max-width: 170px;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #E8E8E8;
+}
+.car-selection-wrapper .options .form .form-elements input {
+  display: none;
+}
+.car-selection-wrapper .options .form .form-elements label .options-card {
+  margin: auto;
+  padding-block: 10px;
+  background-color: #F2F8FE;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+}
+.car-selection-wrapper .options .form .form-elements input:checked + label {
+  border: 1px solid #0473EA;
+  border-radius: 16px;
+}/*# sourceMappingURL=style.css.map */

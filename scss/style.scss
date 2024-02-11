@@ -75,7 +75,7 @@ a {
 // container resize
 .container {
     @media (min-width: 1400px) {
-        max-width: 1446px;
+        max-width: 1470px;
     }
 }
 
@@ -239,7 +239,6 @@ img {
         }
     }
 
-
     .form-element {
         // position: relative;
         width: 130px;
@@ -261,26 +260,14 @@ img {
 
     }
 
-    svg * {
-        fill: rgb(241, 0, 0);
-    }
+
 
     input:checked+label {
         border-color: #0473EA;
         border-radius: 16px;
     }
 
-    .thumbnails {
-        .thumbnail {
-            img {
-                border-radius: 16px !important;
-            }
-        }
 
-        li {
-            list-style: none;
-        }
-    }
 
     .carbarn-details {
         margin-top: 20px;
@@ -291,6 +278,24 @@ img {
         background-color: #0473EA;
         border-radius: 100px;
         margin-top: 20px;
+    }
+
+}
+
+
+
+.left-carousel {
+    .thumbnails {
+        .thumbnail {
+            img {
+                border-radius: 16px !important;
+                list-style: none !important;
+            }
+        }
+
+        li {
+            list-style: none !important;
+        }
     }
 
     .thumbnail .thumbnail-img-wrap {
@@ -313,5 +318,4 @@ img {
     .thumbnail.is-active .thumbnail-img-wrap::after {
         background: transparent;
     }
-
 }

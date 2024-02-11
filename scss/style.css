@@ -40,7 +40,7 @@ a {
 /* reset, root - END */
 @media (min-width: 1400px) {
   .container {
-    max-width: 1446px;
+    max-width: 1470px;
   }
 }
 
@@ -194,18 +194,9 @@ img {
   border: 1px solid transparent;
   transition: all 230ms linear;
 }
-.carbarn-wrapper svg * {
-  fill: rgb(241, 0, 0);
-}
 .carbarn-wrapper input:checked + label {
   border-color: #0473EA;
   border-radius: 16px;
-}
-.carbarn-wrapper .thumbnails .thumbnail img {
-  border-radius: 16px !important;
-}
-.carbarn-wrapper .thumbnails li {
-  list-style: none;
 }
 .carbarn-wrapper .carbarn-details {
   margin-top: 20px;
@@ -216,10 +207,18 @@ img {
   border-radius: 100px;
   margin-top: 20px;
 }
-.carbarn-wrapper .thumbnail .thumbnail-img-wrap {
+
+.left-carousel .thumbnails .thumbnail img {
+  border-radius: 16px !important;
+  list-style: none !important;
+}
+.left-carousel .thumbnails li {
+  list-style: none !important;
+}
+.left-carousel .thumbnail .thumbnail-img-wrap {
   position: relative;
 }
-.carbarn-wrapper .thumbnail .thumbnail-img-wrap::after {
+.left-carousel .thumbnail .thumbnail-img-wrap::after {
   position: absolute;
   content: "";
   left: 0;
@@ -231,6 +230,6 @@ img {
   z-index: 99;
   transition: all 230ms;
 }
-.carbarn-wrapper .thumbnail.is-active .thumbnail-img-wrap::after {
+.left-carousel .thumbnail.is-active .thumbnail-img-wrap::after {
   background: transparent;
 }/*# sourceMappingURL=style.css.map */
